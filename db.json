@@ -6,7 +6,7 @@
             "unit" : "ศซว.ทอ.",
             "fullname" : "สมนึก โพธิ์ศรี",
             "position" : "ผอ.ศซว.ทอ.",
-            "is_register" : false,
+            "is_register" : true,
             "spouse_title" : "นาง",
             "spouse_name" : "กนก โพธิ์ศรี",
             "spouse_register" : true
@@ -39,7 +39,7 @@
             "unit" : "ศซว.ทอ.",
             "fullname" : "เชษฐพัฒน์ ไกรขาว",
             "position" : "ผอ.กวซ.ศซว.ทอ.",
-            "is_register" : true,
+            "is_register" : false,
             "spouse_title" : null,
             "spouse_name" : null,
             "spouse_register" : false
@@ -50,7 +50,7 @@
             "unit" : "ศซว.ทอ.",
             "fullname" : "จตุชัย แพงจันทร์",
             "position" : "ผอ.กบสซ.ศซว.ทอ.",
-            "is_register" : true,
+            "is_register" : false,
             "spouse_title" : null,
             "spouse_name" : null,
             "spouse_register" : false
