@@ -1,9 +1,9 @@
 {
     "report":{
-            "total" : 20,
-            "officer" : 6,
-            "spouse" : 4,
-            "absent" : 10 
+            "total" : 50,
+            "officer" : 13,
+            "spouse" : 19,
+            "absent" : 20 
         },
     "data" : [ 
         {
