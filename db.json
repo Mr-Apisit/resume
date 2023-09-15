@@ -1,4 +1,10 @@
 {
+    "report":{
+            "total" : 20,
+            "officer" : 6,
+            "spouse" : 4,
+            "absent" : 10 
+        },
     "data" : [ 
         {
             "id" : 489,
