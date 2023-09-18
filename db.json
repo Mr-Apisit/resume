@@ -5,13 +5,13 @@
             "spouse" : 19,
             "absent" : 20 
         },
-    "data" : [ 
+    "results" : [ 
         {
             "id" : 489,
             "rank" : "พล.อ.ต.",
             "unit" : "ศซว.ทอ.",
             "fullname" : "สมนึก โพธิ์ศรี",
-            "position" : "ผอ.ศซว.ทอ.",
+            "position" : "ศซว.ทอ.",
             "is_register" : true,
             "spouse_title" : "นาง",
             "spouse_name" : "กนก โพธิ์ศรี",
@@ -27,6 +27,28 @@
             "spouse_title" : "นาง",
             "spouse_name" : "ปภาวดี สุขประเสริฐ",
             "spouse_register" : true
+        },
+         {
+            "id" : 490,
+            "rank" : "พล.อ.ต.",
+            "unit" : "ศวอ.ทอ.",
+            "fullname" : "เสกสรรณ เก่ง",
+            "position" : "ผอ.ศซบ.ทอ.",
+            "is_register" : false,
+            "spouse_title" : null,
+            "spouse_name" : null,
+            "spouse_register" : false
+        },
+         {
+            "id" : 490,
+            "rank" : "พล.อ.ต.",
+            "unit" : "ศซบ.ทอ.",
+            "fullname" : "นรงณ์ ปราณี",
+            "position" : "ผอ.ศซบ.ทอ.",
+            "is_register" : false,
+            "spouse_title" : null,
+            "spouse_name" : null,
+            "spouse_register" : false
         },
         {
             "id" : 491,
