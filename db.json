@@ -15,7 +15,7 @@
             "is_register" : true,
             "spouse_title" : "นาง",
             "spouse_name" : "กนก โพธิ์ศรี",
-            "spouse_register" : true
+            "spouse_register" : false
         },
         {
             "id" : 2,
@@ -26,7 +26,7 @@
             "is_register" : false,
             "spouse_title" : "นาง",
             "spouse_name" : "ปภาวดี สุขประเสริฐ",
-            "spouse_register" : true
+            "spouse_register" : false
         },
          {
             "id" : 3,
@@ -56,7 +56,7 @@
             "unit" : "ศซว.ทอ.",
             "fullname" : "ณัฐวุฒิ สามไพบูลย์",
             "position" : "ผอ.กมซ.ศซว.ทอ.",
-            "is_register" : true,
+            "is_register" : false,
             "spouse_title" : null,
             "spouse_name" : null,
             "spouse_register" : false
