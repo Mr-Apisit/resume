@@ -1,32 +1,103 @@
 {
-	"information":{
-		"name":"Apisit Yupandung",
-		"aka":"MrTree",
-		"bio":"Coffee and Sea addict."
-		"avartar":""
+	"information": {
+		"name": "Apisit Yupandung",
+		"aka": "Mr.Tree",
+		"bio": "Coffee and Sea addict.",
+		"avartar": ""
 	},
 	"skills": [
 		{
-			"name":"Dart/Flutter",
-			"type":"Web/ios/Android",
-			"libraryExperience":[
+			"name": "Dart/Flutter",
+			"type": "Web & Native [ios/Android]",
+			"lib": [
 				{
-					"name":"Bloc",
-					"link":""
+					"name": "Bloc",
+					"description": "",
+					"link": [
+						"https://pub.dev/packages/flutter_bloc"
+					]
 				},
 				{
-					"name":"Hive",
-					"link":""
+					"name": "Hive",
+					"description": "",
+					"link": [
+						"https://pub.dev/packages/hive"
+					]
 				},
 				{
-					"name":"Freezed",
-					"link":""
+					"name": "Freezed",
+					"description": "",
+					"link": [
+						"https://pub.dev/packages/freezed"
+					]
 				},
+				{
+					"name": "http",
+					"description": "",
+					"link": [
+						"https://pub.dev/packages/http"
+					]
+				}
+			]
+		},
+		{
+			"name": "Python",
+			"type": "Server/SaaS",
+			"lib": [
+				{
+					"name": "FastAPI",
+					"description": "",
+					"link": [
+						""
+					]
+				},
+				{
+					"name": "Django",
+					"description": "",
+					"link": [
+						""
+					]
+				},
+				{
+					"name": "Django-Ninja",
+					"description": "",
+					"link": [
+						""
+					]
+				},
+				{
+					"name": "Tensorflow",
+					"description": "",
+					"link": [
+						""
+					]
+				},
+				{
+					"name": "Gunicorn/Uvicorn",
+					"description": "",
+					"link": [
+						""
+					]
+				}
 			]
 		}
 	],
 	"experiences": [
-		{"name":"",
-		"link":""}
+		{
+			"name": "RTAF Authenticator",
+			"description": "",
+			"link": [
+				"",
+				""
+			]
+		},
+		{
+			"name": "My RTAF",
+			"description": "",
+			"link": [
+				"",
+				""
+			]
+		}
 	]
 }
