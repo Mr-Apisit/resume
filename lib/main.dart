@@ -15,11 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Mr.Tree's Resume",
-      themeMode: ThemeMode.dark,
-      darkTheme: ThemeData.dark(),
+      // themeMode: ThemeMode.s,
+      // darkTheme: ThemeData.dark(),
       theme: ThemeData(
+        brightness: Brightness.dark,
         fontFamily: GoogleFonts.getFont("Noto Sans Thai").fontFamily,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightGreen),
         useMaterial3: true,
       ),
       home: const HomeView(),
