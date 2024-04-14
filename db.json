@@ -1,87 +1,24 @@
 {
-    "report":{
-            "total" : 50,
-            "officer" : 13,
-            "spouse" : 19,
-            "absent" : 20 
-        },
-    "results" : [ 
-        {
-            "id" : 1,
-            "rank" : "พล.อ.ต.",
-            "unit" : "ศซว.ทอ.",
-            "fullname" : "สมนึก โพธิ์ศรี",
-            "position" : "ศซว.ทอ.",
-            "is_register" : true,
-            "spouse_title" : "นาง",
-            "spouse_name" : "กนก โพธิ์ศรี",
-            "spouse_register" : false
-        },
-        {
-            "id" : 2,
-            "rank" : "พล.อ.ต.",
-            "unit" : "ศซว.ทอ.",
-            "fullname" : "สรรค์ธกรณ์ หม้อทอง",
-            "position" : "ผอ.ศซบ.ทอ.",
-            "is_register" : false,
-            "spouse_title" : "นาง",
-            "spouse_name" : "ปภาวดี สุขประเสริฐ",
-            "spouse_register" : false
-        },
-         {
-            "id" : 3,
-            "rank" : "พล.อ.ต.",
-            "unit" : "ศวอ.ทอ.",
-            "fullname" : "เสกสรรณ เก่ง",
-            "position" : "ผอ.ศซบ.ทอ.",
-            "is_register" : false,
-            "spouse_title" : null,
-            "spouse_name" : null,
-            "spouse_register" : false
-        },
-         {
-            "id" : 4,
-            "rank" : "พล.อ.ต.",
-            "unit" : "ศซบ.ทอ.",
-            "fullname" : "นรงณ์ ปราณี",
-            "position" : "ผอ.ศซบ.ทอ.",
-            "is_register" : false,
-            "spouse_title" : null,
-            "spouse_name" : null,
-            "spouse_register" : false
-        },
-        {
-            "id" : 5,
-            "rank" : "น.อ.(พ)",
-            "unit" : "ศซว.ทอ.",
-            "fullname" : "ณัฐวุฒิ สามไพบูลย์",
-            "position" : "ผอ.กมซ.ศซว.ทอ.",
-            "is_register" : false,
-            "spouse_title" : null,
-            "spouse_name" : null,
-            "spouse_register" : false
-        },
-        {
-            "id" : 6,
-            "rank" : "น.อ.(พ)",
-            "unit" : "ศซว.ทอ.",
-            "fullname" : "เชษฐพัฒน์ ไกรขาว",
-            "position" : "ผอ.กวซ.ศซว.ทอ.",
-            "is_register" : false,
-            "spouse_title" : null,
-            "spouse_name" : null,
-            "spouse_register" : false
-        },
-        {
-            "id" : 7,
-            "rank" : "น.อ.(พ)",
-            "unit" : "ศซว.ทอ.",
-            "fullname" : "จตุชัย แพงจันทร์",
-            "position" : "ผอ.กบสซ.ศซว.ทอ.",
-            "is_register" : false,
-            "spouse_title" : null,
-            "spouse_name" : null,
-            "spouse_register" : false
-        }
-          ]
-        }
+	"information":{
+		"name":"Apisit Yupandung",
+		"aka":"MrTree",
+		"bio":"Coffee and Sea addict."
+		"avartar":""
+	},
+	"skills": [
+		{
+			"name":"",
+			"type":"",
+			"libraryExperience":[
+				{
+					"name":"",
+					"link':""
+				}
+			]
+		}
+	],
+	"experiences": [
+		{"name":"",
+		"link":""}
+	]
+}
