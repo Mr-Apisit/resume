@@ -7,13 +7,21 @@
 	},
 	"skills": [
 		{
-			"name":"",
-			"type":"",
+			"name":"Dart/Flutter",
+			"type":"Web/ios/Android",
 			"libraryExperience":[
 				{
-					"name":"",
+					"name":"Bloc",
 					"link":""
-				}
+				},
+				{
+					"name":"Hive",
+					"link":""
+				},
+				{
+					"name":"Freezed",
+					"link":""
+				},
 			]
 		}
 	],
