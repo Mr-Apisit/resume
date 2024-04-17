@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-const primaryColor = Color(0xff007F73);
+const primaryColor = Color(0xff20DD33);
 const secondaryColor = Colors.yellow;
 
 ThemeData _lightTheme() {

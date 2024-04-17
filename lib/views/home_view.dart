@@ -1,7 +1,9 @@
 import 'dart:ui';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../controllers/bloc/app_theme/app_theme_bloc.dart';
 import '../controllers/layout/adaptive.dart';
@@ -93,63 +95,134 @@ class _BodyHomeState extends State<BodyHome> {
                     const SizedBox(height: 70),
                     Text("My name ' s Apisit Yupandung", style: Theme.of(context).textTheme.titleMedium),
                     const SizedBox(height: 10),
+                    Text("About my self", style: Theme.of(context).textTheme.titleMedium),
+                    const SizedBox(height: 10),
+                    Text(information.bio, style: Theme.of(context).textTheme.bodyMedium),
+                    const SizedBox(height: 10),
                     Text("skills", style: Theme.of(context).textTheme.titleMedium),
-                    for (final skill in skills)
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10),
-                        child: Container(
-                          alignment: Alignment.center,
-                          height: 120,
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          decoration: BoxDecoration(
-                              color: Theme.of(context).colorScheme.onBackground,
-                              borderRadius: BorderRadiusDirectional.circular(6)),
-                          width: MediaQuery.sizeOf(context).width,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(skill.type),
-                              Text(skill.name),
-                              const Text("Libraries in use : "),
-                              SizedBox(
-                                width: MediaQuery.sizeOf(context).width,
-                                child: Wrap(
-                                  direction: Axis.horizontal,
-                                  children: [for (final lib in skill.lib) Text("${lib.name}, ")],
+                    SizedBox(
+                      width: MediaQuery.sizeOf(context).width,
+                      height: 170,
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [
+                            for (final skill in skills)
+                              Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 0),
+                                child: Container(
+                                  alignment: Alignment.center,
+                                  // height: 140,
+                                  width: 320,
+                                  // padding: const EdgeInsets.symmetric(horizontal: 0),
+                                  decoration: BoxDecoration(
+                                      color: Theme.of(context).colorScheme.background,
+                                      borderRadius: BorderRadiusDirectional.circular(6)),
+                                  child: Flex(
+                                    direction: Axis.horizontal,
+                                    // crossAxisAlignment: CrossAxisAlignment.start,
+                                    // mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      SizedBox(
+                                        width: 80,
+                                        height: 80,
+                                        child: Image.network(
+                                          skill.name,
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                      Container(
+                                        margin: const EdgeInsets.all(10),
+                                        height: MediaQuery.sizeOf(context).height,
+                                        width: 200,
+                                        padding: const EdgeInsets.all(10),
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(6),
+                                          border: Border.all(color: Theme.of(context).colorScheme.primary, width: 2),
+                                        ),
+                                        child: Flex(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisSize: MainAxisSize.min,
+                                          direction: Axis.vertical,
+                                          children: [
+                                            Text(
+                                              skill.type,
+                                              maxLines: 2,
+                                              overflow: TextOverflow.ellipsis,
+                                            ),
+                                            const Text("Libraries in use : "),
+                                            SizedBox(
+                                              width: MediaQuery.sizeOf(context).width,
+                                              height: 60,
+                                              child: SingleChildScrollView(
+                                                scrollDirection: Axis.vertical,
+                                                child: Flex(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  direction: Axis.vertical,
+                                                  children: [for (final lib in skill.lib) Text("     - ${lib.name} ")],
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
-                              )
-                            ],
-                          ),
+                              ),
+                          ],
                         ),
                       ),
+                    ),
                     const SizedBox(height: 20),
                     Text("experience", style: Theme.of(context).textTheme.titleMedium),
                     for (final exp in experience)
                       Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10),
-                        child: Container(
-                          alignment: Alignment.center,
-                          height: 120,
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          decoration: BoxDecoration(
-                              color: Theme.of(context).colorScheme.onBackground,
-                              borderRadius: BorderRadiusDirectional.circular(6)),
+                        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                        child: SizedBox(
                           width: MediaQuery.sizeOf(context).width,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            // mainAxisSize: MainAxisSize.min,
                             children: [
-                              Text(exp.name),
-                              Text(exp.description),
-                              const Text("docs in use : "),
-                              SizedBox(
-                                width: MediaQuery.sizeOf(context).width,
-                                child: Wrap(
-                                  direction: Axis.horizontal,
-                                  children: [for (final link in exp.link) Text("$link ")],
-                                ),
-                              )
+                              Row(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadiusDirectional.circular(20),
+                                    child: Container(
+                                      height: 10,
+                                      width: 10,
+                                      color: Theme.of(context).colorScheme.primary,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 40,
+                                    child: Divider(
+                                      color: Theme.of(context).colorScheme.primary,
+                                      thickness: 2,
+                                    ),
+                                  ),
+                                  const SizedBox(width: 10),
+                                  Expanded(
+                                    child: Text(
+                                      exp.name,
+                                      overflow: TextOverflow.ellipsis,
+                                      maxLines: 2,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              // Text(exp.description),
+                              // const Text("docs in use : "),
+                              // SizedBox(
+                              //   width: MediaQuery.sizeOf(context).width,
+                              //   child: Wrap(
+                              //     direction: Axis.horizontal,
+                              //     children: [for (final link in exp.link) Text("$link ")],
+                              //   ),
+                              // )
                             ],
                           ),
                         ),
@@ -163,7 +236,18 @@ class _BodyHomeState extends State<BodyHome> {
           ),
           Positioned(
             top: 0,
-            child: ResumeAppBar(title: "${information.aka}'s Profile"),
+            child: ResumeAppBar(
+                title: Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Image.network(
+                    information.avartar,
+                    fit: BoxFit.contain,
+                  ),
+                )
+              ],
+            )),
           ),
         ],
       ),
