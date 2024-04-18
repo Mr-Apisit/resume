@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-const primaryColor = Color(0xff20DD33);
-const secondaryColor = Colors.yellow;
+const primaryColor = Color(0xff20DD82);
+const secondaryColor = Color(0xff336268);
 
 ThemeData _lightTheme() {
   return ThemeData(
@@ -16,27 +16,14 @@ ThemeData _lightTheme() {
       titleLarge: TextStyle(color: primaryColor, fontWeight: FontWeight.w600),
       titleMedium: TextStyle(color: primaryColor, fontWeight: FontWeight.w600),
       titleSmall: TextStyle(color: primaryColor, fontWeight: FontWeight.w600),
-      bodyLarge: TextStyle(
-        color: Colors.black,
-      ),
-      bodyMedium: TextStyle(
-        color: Colors.black,
-      ),
-      bodySmall: TextStyle(
-        color: Colors.black,
-      ),
-      labelLarge: TextStyle(
-        color: Colors.black87,
-      ),
-      labelMedium: TextStyle(
-        color: Colors.black87,
-      ),
-      labelSmall: TextStyle(
-        color: Colors.black87,
-      ),
+      bodyLarge: TextStyle(color: secondaryColor),
+      bodyMedium: TextStyle(color: secondaryColor),
+      bodySmall: TextStyle(color: secondaryColor),
+      labelLarge: TextStyle(color: secondaryColor),
+      labelMedium: TextStyle(color: secondaryColor),
+      labelSmall: TextStyle(color: secondaryColor),
     ),
     scaffoldBackgroundColor: Colors.white,
-    appBarTheme: AppBarTheme(color: Colors.white.withOpacity(.7)),
     fontFamily: GoogleFonts.getFont("Noto Sans Thai").fontFamily,
   );
 }
@@ -50,32 +37,19 @@ ThemeData _darkTheme() {
       onBackground: Colors.blueGrey.shade900,
       background: Colors.black,
     ),
-    scaffoldBackgroundColor: Colors.black,
-    appBarTheme: AppBarTheme(color: Colors.black.withOpacity(.8)),
     textTheme: const TextTheme(
       titleLarge: TextStyle(color: primaryColor, fontWeight: FontWeight.w600),
       titleMedium: TextStyle(color: primaryColor, fontWeight: FontWeight.w600),
       titleSmall: TextStyle(color: primaryColor, fontWeight: FontWeight.w600),
-      bodyLarge: TextStyle(
-        color: Colors.white,
-      ),
-      bodyMedium: TextStyle(
-        color: Colors.white,
-      ),
-      bodySmall: TextStyle(
-        color: Colors.white,
-      ),
-      labelLarge: TextStyle(
-        color: Colors.white70,
-      ),
-      labelMedium: TextStyle(
-        color: Colors.white70,
-      ),
-      labelSmall: TextStyle(
-        color: Colors.white70,
-      ),
+      bodyLarge: TextStyle(color: Colors.white),
+      bodyMedium: TextStyle(color: Colors.white),
+      bodySmall: TextStyle(color: Colors.white),
+      labelLarge: TextStyle(color: Colors.white70),
+      labelMedium: TextStyle(color: Colors.white70),
+      labelSmall: TextStyle(color: Colors.white70),
     ),
     fontFamily: GoogleFonts.getFont("Noto Sans Thai").fontFamily,
+    scaffoldBackgroundColor: Colors.black,
   );
 }
 
