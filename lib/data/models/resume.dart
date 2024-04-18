@@ -18,7 +18,9 @@ class Resume with _$Resume {
 class Experience with _$Experience {
   const factory Experience({
     @JsonKey(name: "name") required String name,
-    @JsonKey(name: "description") required String description,
+    @JsonKey(name: "type") required String type,
+    @JsonKey(name: "description_en") required String descriptionEn,
+    @JsonKey(name: "description_th") required String descriptionTh,
     @JsonKey(name: "link") required List<String> link,
   }) = _Experience;
 
@@ -30,7 +32,8 @@ class Information with _$Information {
   const factory Information({
     @JsonKey(name: "name") required String name,
     @JsonKey(name: "aka") required String aka,
-    @JsonKey(name: "bio") required String bio,
+    @JsonKey(name: "bio_en") required String bioEn,
+    @JsonKey(name: "bio_th") required String bioTh,
     @JsonKey(name: "avartar") required String avartar,
   }) = _Information;
 
@@ -41,6 +44,9 @@ class Information with _$Information {
 class Skill with _$Skill {
   const factory Skill({
     @JsonKey(name: "name") required String name,
+    @JsonKey(name: "logo") required String logo,
+    @JsonKey(name: "description_en") required String descriptionEn,
+    @JsonKey(name: "description_th") required String descriptionTh,
     @JsonKey(name: "type") required String type,
     @JsonKey(name: "lib") required List<Experience> lib,
   }) = _Skill;

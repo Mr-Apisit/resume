@@ -1,9 +1,7 @@
 import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../controllers/bloc/app_theme/app_theme_bloc.dart';
 import '../controllers/layout/adaptive.dart';
@@ -97,8 +95,10 @@ class _BodyHomeState extends State<BodyHome> {
                     const SizedBox(height: 10),
                     Text("About my self", style: Theme.of(context).textTheme.titleMedium),
                     const SizedBox(height: 10),
-                    Text(information.bio, style: Theme.of(context).textTheme.bodyMedium),
+                    Text(information.bioEn, style: Theme.of(context).textTheme.bodyMedium),
                     const SizedBox(height: 10),
+                    Text(information.bioTh, style: Theme.of(context).textTheme.bodyMedium),
+                    const SizedBox(height: 20),
                     Text("skills", style: Theme.of(context).textTheme.titleMedium),
                     SizedBox(
                       width: MediaQuery.sizeOf(context).width,
@@ -127,7 +127,7 @@ class _BodyHomeState extends State<BodyHome> {
                                         width: 80,
                                         height: 80,
                                         child: Image.network(
-                                          skill.name,
+                                          skill.logo,
                                           fit: BoxFit.cover,
                                         ),
                                       ),
@@ -146,6 +146,11 @@ class _BodyHomeState extends State<BodyHome> {
                                           mainAxisSize: MainAxisSize.min,
                                           direction: Axis.vertical,
                                           children: [
+                                            Text(
+                                              skill.name,
+                                              maxLines: 2,
+                                              overflow: TextOverflow.ellipsis,
+                                            ),
                                             Text(
                                               skill.type,
                                               maxLines: 2,
